@@ -1,0 +1,78 @@
+#status-container ul {
+    margin:0;
+    padding:0;
+}
+
+#status-container ul li {
+    width:100%;
+    display:block;
+    border-bottom:1px solid #ccc;
+    padding:10px 0;
+}
+
+#status-container ul li img {
+    padding:2px;
+}
+
+#status-container h1 {
+    font-size:20px;
+}
+
+#status-container h1,#status-container input {
+    color:#fff;
+    background-color:#1A3C6C;
+}
+
+#status-container h1,input,#status-container textarea,#status-container .inputbox,#status-container .postStatus {
+    padding:5px;
+}
+
+#status-container input,#status-container textarea,#status-container ul li img,#status-container .inputbox {
+    border:1px solid #ccc;
+}
+
+#status-container .content {
+    padding-left:15px;
+}
+
+#status-container .content a {
+    font-weight:700;
+    color:#3B5998;
+    text-decoration:none;
+}
+
+#status-container .clearer {
+    clear:both;
+}
+
+#status-container .hidden {
+    display:none;
+}
+
+#status-container .left {
+    float:left;
+}
+
+#status-container .right {
+    float:right;
+}
+
+#status-container .localtime {
+    color:#999;
+}
+
+#status-container .inputbox {
+    height:70px;
+    margin:15px 0;
+}
+
+#status-container .inputbox textarea {
+    width:450px;
+    height:50px;
+    overflow:hidden;
+}
+
+#status-container .inputbox input {
+    margin-right:30px;
+    width:50px;
+}
