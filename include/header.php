@@ -28,6 +28,7 @@
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="../php/phpinfo.php">phpinfo()</a></li>
 	        <li><a href="../php/about.php">About</a></li>
+                <li><a href="https://github.com/kameleonbe/playground">GitHub</a></li>
 	      </ul>
 	    </nav>
 		</div>
