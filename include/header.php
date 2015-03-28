@@ -26,8 +26,8 @@
 	        </li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Lorem</a></li>
-	        <li><a href="#">Ipsum</a></li>
+	        <li><a href="../php/phpinfo.php">phpinfo()</a></li>
+	        <li><a href="../php/about.php">About</a></li>
 	      </ul>
 	    </nav>
 		</div>
