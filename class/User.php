@@ -3,7 +3,7 @@
  * StatusPoster class: perform stuatus insertion to database
  * and fetching status posts from database
  */
-class StatusPoster {
+class User {
     private $db = NULL;
     
     const DB_SERVER = "localhost"; 
@@ -23,9 +23,8 @@ class StatusPoster {
         return $this->db;
     }
 
-    public function insertStatus(array $values){
-
-        $sql = "INSERT INTO status ";
+    public function insertUser(array $values){
+        $sql = "INSERT INTO user ";
         $fields = array_keys($values);
         $vals = array_values($values);
         
@@ -46,18 +45,7 @@ class StatusPoster {
         return $statement->execute(); 
     }
 
-    public function getStatusPosts() {
-
-        $statement = $this->db->prepare("SELECT name, image, status, timestamp FROM status ORDER BY timestamp DESC,id");
-        $statement->execute();
-                
-        if ($statement->rowCount() > 0) {
-            return $statement->fetchAll();
-        }
-        
-        return false;
-    }
 }
 
-$status = new StatusPoster();
+$user = new User();
 ?>
