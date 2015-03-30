@@ -36,32 +36,40 @@ echo ($boolean) ? "boolean is TRUE" : "boolean is FALSE";
                 echo ($boolean) ? "boolean is TRUE" : "boolean is FALSE";
             ?>
             <hr>
-            <h4>data type check</h4>
+            <h4>data type check & gettype()</h4>
             <code>
 <pre>
 $var = TRUE;
 echo 'Is Boolean: ' . is_bool($var);
+echo 'Type = ' . gettype($var);
 
 $var = 'TRUE';
 echo 'Is String: ' . is_string($var);
+echo 'Type = ' . gettype($var);
 
 $var = 15;
 echo 'Is Integer: ' . is_int($var);
+echo 'Type = ' . gettype($var);
 
 $var = array('een','twee','drie');
-echo 'Is Array: ' . is_array($var); 
+echo 'Is Array: ' . is_array($var);
+echo 'Type = ' . gettype($var);
 
 $var= NULL;
 echo 'Is NULL: ' . is_null($var);
+echo 'Type = ' . gettype($var);
 
 $var= "";
 echo 'Is Resource: ' . is_resource($var);
+echo 'Type = ' . gettype($var);
 
 $var= "";
 echo 'Is Object: ' . is_object($var);
+echo 'Type = ' . gettype($var);
  
 $var= 3.14;
 echo 'Is Double: ' . is_double($var);
+echo 'Type = ' . gettype($var);
 
 </pre>
             </code>
@@ -69,21 +77,28 @@ echo 'Is Double: ' . is_double($var);
             <?php
                 $var = TRUE;
                 echo 'Is Boolean: ' . is_bool($var) . '<br />';
+                echo 'Type = ' . gettype($var) . '<br />';
                 $var = 'TRUE';
                 echo 'Is String: ' . is_string($var) . '<br />';
+                echo 'Type = ' . gettype($var) . '<br />';
                 $var = 15;
                 echo 'Is Integer: ' . is_int($var) . '<br />';
+                echo 'Type = ' . gettype($var) . '<br />';
                 $var = array('een','twee','drie');
-                echo 'Is Array: ' . is_array($var) . '<br />'; 
+                echo 'Is Array: ' . is_array($var) . '<br />';
+                echo 'Type = ' . gettype($var) . '<br />';
                 $var= NULL;
                 echo 'Is NULL: ' . is_null($var) . '<br />';
+                echo 'Type = ' . gettype($var) . '<br />';
                 $var= "";
                 echo 'Is Resource: ' . is_resource($var) . '<br />';
+                echo 'Type = ' . gettype($var) . '<br />';
                 $var= "";
-                echo 'Is Object: ' . is_object($var) . '<br />'; 
+                echo 'Is Object: ' . is_object($var) . '<br />';
+                echo 'Type = ' . gettype($var) . '<br />';
                 $var= 3.14;
-                echo 'Is Double: ' . is_double($var);
-                
+                echo 'Is Double: ' . is_double($var) . '<br />';
+                echo 'Type = ' . gettype($var);
             ?>
             
             <hr>
