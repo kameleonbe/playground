@@ -83,6 +83,20 @@ echo 'Is Double: ' . is_double($var);
                 echo 'Is Object: ' . is_object($var) . '<br />'; 
                 $var= 3.14;
                 echo 'Is Double: ' . is_double($var);
+                
+            ?>
+            
+            <hr>
+            <h4>print_r</h4>
+            <code>
+<pre>
+$names = array('Nele','Elisa', 'Ilja','Romain');
+print_r($names);
+</pre>
+            </code>
+            <?php
+                $names = array('Nele','Elisa', 'Ilja','Romain');
+                print_r($names);
             ?>
             <hr>
 	</div>
