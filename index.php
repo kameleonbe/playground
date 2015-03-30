@@ -12,7 +12,15 @@
                <input type='text'name="email" />
                <input type='submit' value='Maak nieuwe user aan'/> 
         </form>
+        
+        <p>
+            Planning:
+            <ul>
+                <li>add user table overview</li>
+            </ul>
+        </p>
     </div>
 </div>
+
 
 <?php include ('include/footer.php'); ?>
