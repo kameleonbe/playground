@@ -39,6 +39,35 @@ echo ($output);
 
                 echo ($output);
             ?>
+            <hr>
+            <h4>foreach</h4>
+            <code>
+<pre>
+$for_each_array = array();
+
+array_push ($for_each_array,'een');
+array_push ($for_each_array,'twee');
+array_push ($for_each_array,'drie');
+array_push ($for_each_array,'vier');
+
+foreach ($for_each_array as $item) {
+    echo $item;
+}
+</pre>
+            </code>
+            
+            <?php
+                $for_each_array = array();
+                
+                array_push ($for_each_array,'een');
+                array_push ($for_each_array,'twee');
+                array_push ($for_each_array,'drie');
+                array_push ($for_each_array,'vier');
+                
+                foreach ($for_each_array as $item) {
+                    echo $item . '<br />';
+                }
+            ?>
             
 	</div>
     </div>
