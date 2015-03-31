@@ -114,6 +114,26 @@ print_r($names);
                 print_r($names);
             ?>
             <hr>
+            <h4>var_dump</h4>
+            <code>
+<pre>
+$vari = "This is a sting variable";
+var_dump($vari);
+$vari = TRUE;
+var_dump($vari);
+$vari = 1;
+var_dump($vari)
+</pre>
+            </code>
+            <?php
+                $vari = "This is a sting variable";
+                var_dump($vari);
+                $vari = TRUE;
+                var_dump($vari);
+                $vari = 1;
+                var_dump($vari)
+            ?>
+            <hr>
 	</div>
     </div>
 </div>
