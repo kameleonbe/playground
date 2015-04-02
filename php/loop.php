@@ -2,6 +2,7 @@
 <div id="main">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
             <h4>for</h4>
             <code>
 <pre>
@@ -69,7 +70,8 @@ foreach ($for_each_array as $item) {
                 }
             ?>
             
-	</div>
+            </div>
+        </div>
     </div>
 </div>
 <?php include ('../include/footer.php'); ?>

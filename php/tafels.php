@@ -2,6 +2,7 @@
 <div id="main">
 	<div class="container">
 		<div class="row">
+                    <div class="col-md-12">
 			<form action="process.php" method="POST">
 				<select name="table">
 					<option>1</option>
@@ -17,6 +18,7 @@
 				</select>
 				<input type='submit' value='Bereken'/> 
 			</form>
+                    </div>
 		</div>
 	</div>
 </div>

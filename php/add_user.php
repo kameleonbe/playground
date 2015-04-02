@@ -22,7 +22,9 @@ $user->insertUser(array(
 <div id="main">
     <div class="container">
         <div class="row">
-	<?php echo ($name . " " . $firstname . " " . $email . " " . $timestamp); ?>
+            <div class="col-md-12">
+                <?php echo ($name . " " . $firstname . " " . $email . " " . $timestamp); ?>
+            </div>
 	</div>
     </div>
 </div>

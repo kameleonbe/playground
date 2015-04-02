@@ -36,6 +36,7 @@ if (isset($_POST['status'])) {
 
        <div id="status-container" class="container">
         <div class="row">
+            <div class="col-md-12">
             <h1>Status Poster</h1>
             <div class="inputbox">
                 <form id="statusFrom" action="http://localhost:8888/php/statusposter.php" method="POST" >
@@ -80,7 +81,7 @@ if (isset($_POST['status'])) {
                 <div class="clearer"></div>
             </li>
         </div>
-		
-		</div>
+   </div>
+ </div>
 <?php include ('../include/footer.php'); ?>
 

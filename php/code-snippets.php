@@ -2,6 +2,7 @@
 <div id="main">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
             <h4>if else</h4>
             <code>
 <pre>
@@ -134,6 +135,7 @@ var_dump($vari)
                 var_dump($vari)
             ?>
             <hr>
+            </div>
 	</div>
     </div>
 </div>
