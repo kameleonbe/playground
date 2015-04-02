@@ -1,5 +1,5 @@
 header {
-	background:#eee;
+	background:none;
 }
 	
 footer {
@@ -33,5 +33,7 @@ pre {
     padding-left:20px;
 }
 
-#main {padding:0 0 50px 0;}
+#main {
+    padding:0 0 50px 0;
+}
 
