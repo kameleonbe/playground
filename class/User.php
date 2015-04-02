@@ -44,6 +44,18 @@ class User {
         
         return $statement->execute(); 
     }
+    
+    public function getUsers() {
+        $statement = $this->db->prepare("SELECT * FROM user");
+        $statement->execute();
+                
+        if ($statement->rowCount() > 0) {
+            return $statement->fetchAll();
+        }
+        
+        return false;
+    
+    }
 
 }
 

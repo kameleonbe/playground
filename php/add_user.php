@@ -28,5 +28,3 @@ $user->insertUser(array(
 </div>
 
 <?php include ('../include/footer.php'); ?>
-
-

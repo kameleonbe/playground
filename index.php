@@ -1,5 +1,8 @@
-<?php include ('include/header.php'); ?>
-<?php include ('include/dbuser.php'); ?>
+<?php
+require_once ('class/User.php');
+include ('include/header.php');
+
+?>
 
 <div class='container'>
     <div class='row'>
@@ -19,8 +22,27 @@
                 <li>add user table overview</li>
             </ul>
         </p>
+        
+        <?php
+
+        $result = $user->getUsers();
+        
+        echo "<table><tr><th width='75'>ID</th><th width='150'>Naam</th><th width='150'>Voornaam</th><th width='300'>E-mail</th></tr>";
+        
+        foreach ($result as $row) {
+            echo "<tr><td>" . $row[0] . "</td><td>" . $row[1] . "</td><td>" . $row [2] . "</td><td>" . $row [3] . "</td><td><a href='php/delete.php'>Delete</td></tr>";
+        }  
+        
+        $user = NULL;
+       
+        echo "</table>";
+
+
+ ?>
     </div>
 </div>
+
+
 
 
 <?php include ('include/footer.php'); ?>
