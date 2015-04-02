@@ -135,6 +135,21 @@ var_dump($vari)
                 var_dump($vari)
             ?>
             <hr>
+            <h4>define () constants</h4>
+            <code>
+<pre>
+define (YEAR, 1967);
+define (NAME, 'Romain Verbeke');
+echo NAME . ' was born in ' . YEAR . '.';
+</pre>
+            </code>
+               
+            <?php
+               define (YEAR, 1967);
+               define (NAME, 'Romain Verbeke');
+               echo NAME . ' was born in ' . YEAR . '.';
+            ?>
+            <hr>
             </div>
 	</div>
     </div>
