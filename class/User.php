@@ -56,6 +56,13 @@ class User {
         return false;
     
     }
+    
+    public function deleteUser($id) {   
+        $statement = $this->db->prepare("DELETE FROM user WHERE id = " . $id);
+        $statement->execute();
+       
+        return false;
+    }
 
 }
 
