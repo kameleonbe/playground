@@ -37,3 +37,8 @@ pre {
     padding:0 0 50px 0;
 }
 
+section pre {
+    background-color: #fff !important;
+    border:none !important;
+}
+
