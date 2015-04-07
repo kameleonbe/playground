@@ -118,7 +118,7 @@ print_r($names);
             <h4>var_dump</h4>
             <code>
 <pre>
-$vari = "This is a sting variable";
+$vari = "This is a string variable";
 var_dump($vari);
 $vari = TRUE;
 var_dump($vari);
@@ -127,7 +127,7 @@ var_dump($vari)
 </pre>
             </code>
             <?php
-                $vari = "This is a sting variable";
+                $vari = "This is a string variable";
                 var_dump($vari);
                 $vari = TRUE;
                 var_dump($vari);
@@ -149,6 +149,19 @@ echo NAME . ' was born in ' . YEAR . '.';
                define (NAME, 'Romain Verbeke');
                echo NAME . ' was born in ' . YEAR . '.';
             ?>
+            <hr>
+            <h4>define () constants</h4>
+            <code>
+<pre>
+$bool = TRUE; if ($bool):
+<>$bool = TRUE<>
+endif;
+</pre>
+            </code>
+               
+            <?php $bool = TRUE; if ($bool): ?>
+            <h3>$bool = TRUE</h3>
+            <?php endif;?>
             <hr>
             </div>
 	</div>
