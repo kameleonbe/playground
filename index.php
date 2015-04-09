@@ -8,6 +8,10 @@ $result = $user->getUsers();
     <div class='container'>
         <div class='row'>
             <div class="col-md-12">
+                     <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
                 <form action="php/add_user.php" method="POST">
                     <label>Naam</label>
                     <input type='text'name="name" />
