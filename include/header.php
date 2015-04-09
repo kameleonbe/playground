@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!d html>
+<html ng-app>
     <head>
         <title>PHP TESTING PLAY GROUND</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
