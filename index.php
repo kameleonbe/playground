@@ -4,18 +4,20 @@ include ('include/header.php');
 $result = $user->getUsers();
 
 $postdata = file_get_contents("php://input");
-$request = json_decode($postdata);
-$name = $request->name;
-$firstname = $request->firstname;   
-$email = $request->email;
 
-$user->insertUser(array(
-    'name' => $name, 
-    'firstname' => $firstname, 
-    'email' => $email, 
-    'timestamp' => time()
+if ($postdata){
+    $request = json_decode($postdata);
+    $name = $request->name;
+    $firstname = $request->firstname;   
+    $email = $request->email;
+
+    $user->insertUser(array(
+        'name' => $name, 
+        'firstname' => $firstname, 
+        'email' => $email, 
+        'timestamp' => time()
 ));
-
+}
 ?>
 
 <div id="main">
@@ -27,15 +29,46 @@ $user->insertUser(array(
       <input type="text" ng-model="yourName" placeholder="Enter a name here">
       <hr>
       <h2>Hello {{yourName}}!</h2>
-                <form ng-submit="frmSubmit()" ng-controller="frmControl">
-                    <label>Naam</label>
-                    <input type='text' name="name" ng-model="name" />
-                    <label>Voornaam</label>
-                    <input type='text' name="firstname" ng-model="firstname" />
-                    <label>E-mail</label>
-                    <input type='text'name="email" ng-model="email" />
-                    <input type='submit' name="submit" value='Maak nieuwe user aan'/> 
-                </form>
+<form class="form-horizontal" ng-submit="frmSubmit()" ng-controller="frmControl">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Add new user</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="firstname">Voornaam</label>  
+  <div class="col-md-5">
+  <input id="firstname" name="firstname" placeholder="Voornaam" class="form-control input-md" required="" type="text" ng-model="firstname" >
+  <span class="help-block">Typ hier uw voornaam</span>  
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Naam</label>  
+  <div class="col-md-5">
+  <input id="name" name="name" placeholder="Naam" class="form-control input-md" required="" type="text" ng-model="name" >
+  <span class="help-block">Typ hier uw achternaam</span>  
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">E-Mail</label>  
+  <div class="col-md-5">
+  <input id="email" name="email" placeholder="E-Mail" class="form-control input-md" required="" type="text" ng-model="email" >
+  <span class="help-block">Typ hier uw e-mail adress</span>  
+  </div>
+</div>
+
+<div class="form-group"> 
+  <label class="col-md-4 control-label" for="email"></label> 
+      <div class="col-md-5">
+                <button id="submit" name="Submit" class="btn btn-primary">Maak nieuwe user aan</button>
+      </div>
+</div>
+
+
+</fieldset>
+</form>
 
                 <?php
                 echo "<table id='resultTable'><tr><th width='75'>ID</th><th width='150'>Naam</th><th width='150'>Voornaam</th><th width='300'>E-mail</th></tr>";
