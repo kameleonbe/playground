@@ -1,25 +1,44 @@
 <?php
+require ('lib/FirePHPCore/fb.php');
+FB::log ('FirePHPCore');
+
 require_once ('class/User.php');
 include ('include/header.php');
 $result = $user->getUsers();
+
+$postdata = file_get_contents("php://input");
+$request = json_decode($postdata);
+$name = $request->name;
+$firstname = $request->firstname;   
+$email = $request->email;
+
+$user->insertUser(array(
+    'name' => $name, 
+    'firstname' => $firstname, 
+    'email' => $email, 
+    'timestamp' => time()
+));
+
 ?>
 
 <div id="main">
     <div class='container'>
         <div class='row'>
             <div class="col-md-12">
+                <h1>PHP - Angular.js - Bootstrap</h1>
+                <?php echo '<h1>' . "email" . $result . '</h1>'; ?>
                      <label>Name:</label>
       <input type="text" ng-model="yourName" placeholder="Enter a name here">
       <hr>
-      <h1>Hello {{yourName}}!</h1>
-                <form action="php/add_user.php" method="POST">
+      <h2>Hello {{yourName}}!</h2>
+                <form ng-submit="frmSubmit()" ng-controller="frmControl">
                     <label>Naam</label>
-                    <input type='text'name="name" />
+                    <input type='text' name="name" ng-model="name" />
                     <label>Voornaam</label>
-                    <input type='text'name="firstname" />
+                    <input type='text' name="firstname" ng-model="firstname" />
                     <label>E-mail</label>
-                    <input type='text'name="email" />
-                    <input type='submit' value='Maak nieuwe user aan'/> 
+                    <input type='text'name="email" ng-model="email" />
+                    <input type='submit' name="submit" value='Maak nieuwe user aan'/> 
                 </form>
 
                 <?php
@@ -39,7 +58,5 @@ $result = $user->getUsers();
         </div>
     </div>
 </div>
-
-
 
 <?php include ('include/footer.php'); ?>
