@@ -29,7 +29,6 @@ if (isset($_POST['status'])) {
 
 <?php include ('../include/header.php'); ?>
 
-
        <link href="../assets/css/statusposter.css" media="screen" rel="stylesheet" type="text/css" />
        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
        <script src="../assets/js/status.js"></script>

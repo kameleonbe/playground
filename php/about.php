@@ -12,11 +12,23 @@
                 <ul>
                     <li>Drupal</li>
                     <li>CSS/Sass</li>
-                    <li>HTML</li>h
+                    <li>HTML</li>
                     <li>Git</li>
                     <li>Javascript</li>
                     <li>PHP</li> 
+                </ul>
             </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-md-12">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Angular post request to PHP: <a href="http://codeforgeek.com/2014/07/angular-post-request-php/">http://codeforgeek.com/2014/07/angular-post-request-php/</a></li>
+                </ul>
+            </div>
+           </div>
         </div>
     </div>
 </div>

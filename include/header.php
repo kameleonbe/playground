@@ -9,7 +9,7 @@
         <script src="../assets/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
         <script src="../assets/js/ang.js"></script>
-        <script src="../assets/js/custom.js"></script>
+        <!--<script src="../assets/js/custom.js"></script>-->
     </head>
 	<body>
 	<header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">

@@ -8,7 +8,7 @@ app.controller ('frmControl', function ($scope,$http) {
             
             var request = $http({
                     method: "post",
-                    url: window.location.href + "index.php",
+                    url: window.location.href,
                     data: {
                         name:$scope.name,
                         firstname:$scope.firstname,
@@ -19,6 +19,7 @@ app.controller ('frmControl', function ($scope,$http) {
             
             request.success(function () {
                     console.log ('success');
+                    $('#resultTable').append("<tr><td>Not set</td><td>" + $scope.name + "</td><td>" + $scope.firstname + "</td><td>" + $scope.email + "</td></tr>")
             });
       };
 });
