@@ -1,4 +1,4 @@
-<!d html>
+<!doctype html>
 <html ng-app="playground">
     <head>
         <title>PHP TESTING PLAY GROUND</title>
