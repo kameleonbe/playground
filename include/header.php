@@ -1,5 +1,5 @@
 <!d html>
-<html ng-app>
+<html ng-app="playground">
     <head>
         <title>PHP TESTING PLAY GROUND</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,7 @@
         <script src="../assets/js/jquery-1.11.2.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="../assets/js/ang.js"></script>
     </head>
 	<body>
 	<header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
