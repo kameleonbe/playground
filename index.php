@@ -36,7 +36,7 @@ if ($postdata){
 <legend>Add new user</legend>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="firstname">Voornaam</label>  
+  <label class="col-md-1 control-label" for="firstname">Voornaam</label>  
   <div class="col-md-5">
   <input id="firstname" name="firstname" placeholder="Voornaam" class="form-control input-md" required="" type="text" ng-model="firstname" >
   <span class="help-block">Typ hier uw voornaam</span>  
@@ -44,7 +44,7 @@ if ($postdata){
 </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="name">Naam</label>  
+  <label class="col-md-1 control-label" for="name">Naam</label>  
   <div class="col-md-5">
   <input id="name" name="name" placeholder="Naam" class="form-control input-md" required="" type="text" ng-model="name" >
   <span class="help-block">Typ hier uw achternaam</span>  
@@ -52,7 +52,7 @@ if ($postdata){
 </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="email">E-Mail</label>  
+  <label class="col-md-1 control-label" for="email">E-Mail</label>  
   <div class="col-md-5">
   <input id="email" name="email" placeholder="E-Mail" class="form-control input-md" required="" type="text" ng-model="email" >
   <span class="help-block">Typ hier uw e-mail adress</span>  
@@ -60,7 +60,7 @@ if ($postdata){
 </div>
 
 <div class="form-group"> 
-  <label class="col-md-4 control-label" for="email"></label> 
+  <label class="col-md-1 control-label" for="email"></label> 
       <div class="col-md-5">
                 <button id="submit" name="Submit" class="btn btn-primary">Maak nieuwe user aan</button>
       </div>
@@ -68,7 +68,11 @@ if ($postdata){
 
 
 </fieldset>
+    
+   
 </form>
+      
+       <legend>All users</legend>
 
                 <?php
                 echo "<table id='resultTable'><tr><th width='75'>ID</th><th width='150'>Naam</th><th width='150'>Voornaam</th><th width='300'>E-mail</th></tr>";
