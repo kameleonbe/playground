@@ -8,6 +8,7 @@
                 <a href='/php/statusposter.php'>Status Poster</a>
                 <a href='/php/code-snippets.php'>Code Snippets</a>
                 <a href='/php/array.php'>Array()</a>
+                <a href='/php/functions.php'>Functions</a>
                 <a href='/php/loop.php'>Loop</a>
                 <a href='/php/wideo.php'>Wideo</a>
               </div>
