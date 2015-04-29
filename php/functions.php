@@ -36,6 +36,43 @@ get_info('Romain','webdesigner');
                         ?>
                 </section>
                 <hr>
+                <h4>Function with return</h4>
+                <code>
+<pre>
+function get_name ($profession=null,$name='Mike') {
+      if($profession) {
+          $arr = array ($name,$profession);
+      } else {
+          $arr = array ($name);                                 
+      }
+
+      return $arr;
+}
+
+$resultaat = get_name('Webdesigner');
+
+print_r ($resultaat);
+</pre>
+                </code>
+
+                <section>
+                        <?php
+                            function get_name ($profession=null,$name='Mike') {
+                                  if($profession) {
+                                      $arr = array ($name,$profession);
+                                  } else {
+                                      $arr = array ($name);                                 
+                                  }
+                                  
+                                  return $arr;
+                            }
+
+                            $resultaat = get_name('Webdesigner');
+                            
+                            print_r ($resultaat);
+
+                        ?>
+                </section>
 
             </div>
         </div>
