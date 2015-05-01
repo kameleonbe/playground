@@ -73,7 +73,32 @@ print_r ($resultaat);
 
                         ?>
                 </section>
+                <hr>
+                <h4>Variabel function</h4>
+                <code>
+<pre>
+function add_up($a,$b) {
+  return $a + $b;
+}
 
+$optellen = 'add_up';
+
+echo $optellen(5,7);
+</pre>
+                </code>
+
+                <section>
+                        <?php
+                            function add_up($a,$b) {
+                                  return $a + $b;
+                            }
+
+                            $optellen = 'add_up';
+                            
+                            echo $optellen(5,7);
+
+                        ?>
+                </section>
             </div>
         </div>
     </div>
