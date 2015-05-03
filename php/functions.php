@@ -98,6 +98,31 @@ echo $optellen(5,7);
                         echo $optellen(5,7);
                     ?>
                 </section>
+                </hr>
+                <h4>Closures (anonymous function)</h4>
+                <code>
+<pre>
+$name = 'Mike';
+
+$greet = function() use ($name) {
+    echo "Hello there, $name";
+};
+
+$greet();
+</pre>
+                </code>
+
+                <section>
+                        <?php
+                            $name = 'Mike';
+                            
+                            $greet = function() use ($name) {
+                                echo "Hello there, $name";
+                            };
+                            
+                           $greet();
+                        ?>
+                </section>
             </div>
         </div>
     </div>
