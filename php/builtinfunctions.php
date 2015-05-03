@@ -33,6 +33,52 @@ echo 'Find sentence starting from Factor = ' . substr($phrase,$start);
                         ?>
                 </section>
                 <hr>
+<h4>Array functions: array_keys(), array_walk()</h4>
+                <code>
+<pre>
+$names = array (
+    'Mike' => 'frog',
+    'Chris' => 'teacher',
+    'Hampton' => 'teacher'
+);
+
+var_dump($names);
+
+foreach (array_keys($names) as $name) {
+    echo "Hello, $name";
+};
+
+function print_info($value,$key){
+    echo "$key is a $value";
+};
+
+array_walk($names, 'print_info');
+</pre>
+                </code>
+
+                <section>
+                        <?php
+                            $names = array (
+                                'Mike' => 'frog',
+                                'Chris' => 'teacher',
+                                'Hampton' => 'teacher'
+                            );
+                            
+                            var_dump($names);
+                            
+                            foreach (array_keys($names) as $name) {
+                                echo "</br>Hello, $name";
+                            };
+                            
+                            
+                            function print_info($value,$key){
+                                echo "</br>$key is a $value";
+                            };
+                            
+                            array_walk($names, 'print_info');
+                        ?>
+                </section>
+                <hr>
                 
             </div>
         </div>
