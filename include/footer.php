@@ -5,7 +5,6 @@
                 <a href='/php/tafels.php'>Tafels</a>
                 <a href='/php/symlink.php'>Symlink</a>
                 <a href='/php/file-exists.php'>File Exists</a>
-                <a href='/php/statusposter.php'>Status Poster</a>
                 <a href='/php/code-snippets.php'>Code Snippets</a>
                 <a href='/php/array.php'>Array()</a>
                 <a href='/php/functions.php'>Functions</a>

@@ -30,6 +30,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
+            <li><a href='/sites/statusposter.php'>Status Poster</a></li>
+            <li><a href='/sites/shirts4mike/'>Shirts 4 Mike</a></li> 
           </ul>
           <ul class="nav navbar-nav navbar-right">
              <li><a href="../php/phpinfo.php">phpinfo()</a></li>
