@@ -9,6 +9,7 @@
                 <a href='/php/array.php'>Array()</a>
                 <a href='/php/functions.php'>Functions</a>
                 <a href='/php/builtinfunctions.php'>Built-in functions</a>
+                <a href='/php/fibonacci.php'>Fibonacci</a>
                 <a href='/php/loop.php'>Loop</a>
                 <a href='/php/wideo.php'>Wideo</a>
               </div>
